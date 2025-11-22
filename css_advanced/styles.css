@@ -1,0 +1,169 @@
+html {
+  font-size: 10px;
+  font-family: "Source sans pro", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* margin-inline: 150px; */
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+nav img {
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  z-index: 1;
+}
+
+#section-hero {
+  min-width: 100vw;
+  min-height: 109.3rem;
+  background-image: url(./images/Object.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#section-hero div div {
+  /* flex-direction: row; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+a:link {
+  cursor: pointer;
+}
+
+/* Hero info */
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 22rem;
+}
+h1 + div {
+  display: flex;
+  gap: 5rem;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  margin-block-end: 5rem;
+}
+
+h1 {
+  font-size: 12rem;
+  font-weight: bold;
+  color: white;
+}
+
+button {
+  border: none;
+  background-color: #c271ff;
+  color: white;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-block: 1.3rem;
+  padding-inline: 2rem;
+  cursor: pointer;
+}
+
+/* Hero images */
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img h2 {
+  font-size: 3.2rem;
+  font-weight: 100;
+  color: white;
+  line-height: 1.2;
+  margin-block-start: 17rem;
+  margin-block-end: 7rem;
+}
+
+.hero-img h2 span {
+  font-weight: bold;
+  color: #c271ff;
+}
+
+.hero-img div {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.hero-img div div {
+  display: flex;
+  flex: 1 15rem;
+  flex-direction: column;
+  align-items: center;
+  max-width: 23.7rem;
+  justify-content: space-between;
+}
+
+.hero-img div div img {
+  min-width: 15rem;
+  min-height: 15rem;
+}
+
+.hero-img div div img + h3 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 900;
+}
+
+.hero-img div div img + h3 + p {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: white;
+  width: 15rem;
+  line-height: 1.5;
+  font-style: italic;
+  text-align: center;
+}
+
+[src$="2.png"] {
+  border-radius: 50%;
+}
+
+#testimonial {
+  position: absolute;
+  top: 109.3rem;
+  background-color: green;
+  min-width: 100%;
+  text-align: center;
+}
