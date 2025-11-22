@@ -1,0 +1,29 @@
+/* My styles */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border: 2px solid grey;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  border: 2px solid grey;
+}
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+aside {
+  flex: 1;
+  overflow-y: auto;
+  border: 2px solid grey;
+}
+
+footer {
+  border: 2px solid grey;
+}
