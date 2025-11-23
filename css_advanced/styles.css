@@ -431,11 +431,37 @@ button {
 }
 
 /* Footer styles */
-#footer {
+footer {
   position: absolute;
   top: 306.9rem;
   background-color: #071629;
   min-width: 100dvw;
   min-height: 25rem;
   color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10rem;
+  padding-inline: 10rem;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.fa-brands {
+  font-size: 3rem;
+}
+
+.footer-content + p {
+  color: #979797;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-align: center;
+  padding-block-end: 3rem;
 }
