@@ -204,3 +204,102 @@ button {
   color: white;
   font-weight: 100;
 }
+
+/* Tutotorial section styling */
+#tutorials {
+  position: absolute;
+  top: 135.6rem;
+  display: flex;
+  flex-direction: column;
+  padding-block: 8.5rem;
+  padding-inline: 10rem;
+}
+
+#tutorials h2 {
+  text-align: center;
+  color: black;
+  font-size: 3.2rem;
+  font-weight: 100;
+  margin-block-end: 8rem;
+}
+
+#tutorials h2 span {
+  color: #c271ff;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.card {
+  min-height: 33.5rem;
+}
+
+.card > img:first-child {
+  min-width: 25.5rem;
+  min-height: 15.4rem;
+}
+
+.card img + h3 {
+  font-size: 1.6rem;
+  color: black;
+  font-weight: bold;
+  margin-block: 1.2rem;
+}
+
+.card img + h3 + p {
+  font-size: 1.4rem;
+  color: rgba(7, 22, 41, 0.5);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.card-tutor {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-tutor [src$="1.png"] {
+  width: 3rem;
+  height: 3rem;
+  margin-block: 2rem;
+}
+
+.card-tutor [src$="1.png"] + h4 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #c271ff;
+}
+
+.card-ratings-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-ratings {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-ratings div {
+  color: #c271ff;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+}
+
+.card-ratings div:last-child {
+  color: #979797;
+}
+
+.card-ratings-box > p {
+  color: #c271ff;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
