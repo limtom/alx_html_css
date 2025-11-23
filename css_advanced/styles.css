@@ -45,10 +45,6 @@ nav ul {
   left: 0;
 }
 
-#section-hero div div {
-  /* flex-direction: row; */
-}
-
 li {
   list-style: none;
 }
@@ -369,4 +365,77 @@ button {
 #membership button {
   align-self: center;
   margin-block-start: 5rem;
+}
+
+/* FAq styles */
+#faq {
+  position: absolute;
+  top: 236rem;
+  min-width: 100dvw;
+}
+
+#faq > div {
+  max-width: 92rem;
+  max-height: 70.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+  gap: 10rem;
+  row-gap: 5rem;
+  margin: 0 auto;
+}
+
+#faq h2 {
+  font-size: 6rem;
+  font-weight: 100;
+  color: #071629;
+  margin-block: 5rem;
+  text-align: center;
+}
+
+#faq h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-block-end: 3rem;
+}
+
+.faq-1 {
+  grid-area: top-left;
+  min-width: 35rem;
+  min-height: 24.2rem;
+}
+.faq-2 {
+  grid-area: top-right;
+  min-width: 35rem;
+  min-height: 24.2rem;
+}
+.faq-3 {
+  grid-area: bottom-left;
+  min-width: 35rem;
+  min-height: 24.2rem;
+}
+.faq-4 {
+  grid-area: bottom-right;
+  min-width: 35rem;
+  min-height: 24.2rem;
+}
+
+.faq-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-weight: 100;
+  color: #979797;
+}
+
+/* Footer styles */
+#footer {
+  position: absolute;
+  top: 306.9rem;
+  background-color: #071629;
+  min-width: 100dvw;
+  min-height: 25rem;
+  color: white;
 }
