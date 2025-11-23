@@ -12,6 +12,7 @@ html {
 body {
   /* margin-inline: 150px; */
   position: relative;
+  overflow-x: hidden;
 }
 
 nav {
@@ -211,7 +212,7 @@ button {
   top: 135.6rem;
   display: flex;
   flex-direction: column;
-  padding-block: 8.5rem;
+  padding-block: 6rem;
   padding-inline: 10rem;
 }
 
@@ -302,4 +303,70 @@ button {
   color: #c271ff;
   font-size: 1.4rem;
   font-weight: 300;
+}
+
+/* Membership section */
+#membership {
+  min-width: 100dvw;
+  background-color: #071629;
+  position: absolute;
+  top: 193.1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-block-start: 5rem;
+  padding-block-end: 3rem;
+}
+
+#membership > div {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: space-evenly;
+  margin-inline: 10rem;
+}
+
+#membership > h2:first-child {
+  text-align: center;
+  font-size: 3.2rem;
+  color: inherit;
+  font-weight: 100;
+  margin-block-end: 3rem;
+}
+
+#membership > h2:first-child span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+#membership > div div {
+  flex: 1 25.7rem;
+  text-align: center;
+  min-width: 25.7rem;
+  min-height: 15.3rem;
+  /* padding-inline: 4rem; */
+}
+
+#membership > div div img {
+  min-width: 4.3rem;
+  min-height: 3.5rem;
+  margin-block-start: 3rem;
+  margin-block-end: 4rem;
+}
+
+#membership > div div h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+#membership > div div p {
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.5;
+  margin-block-start: 1rem;
+}
+
+#membership button {
+  align-self: center;
+  margin-block-start: 5rem;
 }
