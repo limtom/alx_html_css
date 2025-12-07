@@ -1,0 +1,1051 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-col-1 {
+  grid-column: span-1;
+}
+
+.grid-col-2 {
+  grid-column: span-2;
+}
+
+.grid-col-3 {
+  grid-column: span-3;
+}
+
+.grid-col-4 {
+  grid-column: span-4;
+}
+
+.grid-col-5 {
+  grid-column: span-5;
+}
+.grid-col-6 {
+  grid-column: span-6;
+}
+
+.grid-col-7 {
+  grid-column: span-7;
+}
+
+.grid-col-8 {
+  grid-column: span-8;
+}
+
+.grid-col-9 {
+  grid-column: span-9;
+}
+
+.grid-col-10 {
+  grid-column: span-10;
+}
+
+.grid-col-11 {
+  grid-column: span-11;
+}
+
+.grid-col-12 {
+  grid-column: span-12;
+}
+
+/* Flex grid */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+  margin-bottom: 2rem;
+}
+
+.flex-col {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.flex-col-1 {
+  width: 8.3333%;
+}
+.flex-col-2 {
+  width: 16.6667%;
+}
+.flex-col-3 {
+  width: 25%;
+}
+.flex-col-4 {
+  width: 33.3333%;
+}
+.flex-col-5 {
+  width: 41.6667%;
+}
+.flex-col-6 {
+  width: 50%;
+}
+.flex-col-7 {
+  width: 58.3333%;
+}
+.flex-col-8 {
+  width: 66.6667%;
+}
+.flex-col-9 {
+  width: 75%;
+}
+.flex-col-10 {
+  width: 83.3333%;
+}
+.flex-col-11 {
+  width: 91.6667%;
+}
+.flex-col-12 {
+  width: 100%;
+}
+
+header {
+  min-height: 80rem;
+  background-image: url(./images/headphones_hero_1.jpg);
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: hover 5ms;
+}
+
+a:link {
+}
+a:focus {
+}
+a:active {
+}
+a:hover {
+  color: #ff6565;
+}
+
+.logo img {
+  max-width: 16.1rem;
+  height: 3.2rem;
+}
+
+.header-content {
+  max-width: 63.7rem;
+  margin: 0 auto;
+  margin-block-start: 35rem;
+  text-align: center;
+  color: white;
+}
+
+.header-content-title h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.header-content-title h1 + p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-block-start: 1rem;
+}
+
+.cta {
+  background-color: #ff6565;
+  border-radius: 15pc;
+  padding-inline: 25px;
+  padding-block: 10px;
+  margin-block-start: 4rem;
+  margin-block-end: 5rem;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta-text {
+  font-size: 1.6rem !important;
+  font-weight: 100 !important;
+  line-height: 1.5;
+}
+
+/* What to do */
+.what-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #071629;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.what-title {
+  margin-block-start: 5rem;
+  margin-block-end: 3rem;
+}
+
+.what-text {
+  line-height: 2;
+  padding-inline: 18rem;
+}
+
+.what-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-block-start: 7rem;
+  margin-block-end: 5rem;
+}
+
+.what-list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.what-icon-title {
+  margin-block: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Spincycle-ot", sans-serif;
+}
+
+.what-icon-text {
+  font-size: 1.4rem;
+  line-height: 2;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* Our results */
+#our-results {
+  background-image: url(./images/headphones_hero_2.jpg);
+  background-position: 0;
+  background-size: cover;
+  min-height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.our-results-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.our-results-img {
+  /* max-height: 19rem;
+  min-width: 19rem; */
+}
+
+.our-results-box div p:first-of-type:before {
+  display: block;
+  /* content: url(./images/pentagone.png); */
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: 0;
+  width: 19rem;
+  height: 19rem;
+}
+
+.our-results-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-block-start: -8rem;
+  margin-block-end: 4rem;
+  color: inherit;
+  text-align: center;
+}
+
+.our-results-text {
+  font-size: 1.6rem;
+  font-weight: 200;
+  /* color: white; */
+  max-width: 63.7rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-block-end: 4rem;
+}
+
+/* Contact-us */
+#contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 5rem;
+}
+
+.contact-us h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-block-end: 3rem;
+  text-align: center;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #868484;
+  padding-bottom: 1rem;
+  margin-block-end: 4rem;
+  min-width: 33.35rem;
+  padding-right: 1rem;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "spin-circle-ot", sans-serif;
+  color: #071629;
+  padding-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-element-btn {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #071629;
+  padding-block: 4rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add this after your existing CSS */
+
+/* Tablet Styles (768px and above) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  /* Header adjustments for tablet */
+  header {
+    min-height: 60rem;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .header-content {
+    max-width: 80%;
+    margin-block-start: 25rem;
+  }
+
+  .header-content-title h1 {
+    font-size: 2.8rem;
+  }
+
+  .header-content-title h1 + p {
+    font-size: 1.4rem;
+  }
+
+  /* Navigation adjustments */
+  nav ul {
+    gap: 3rem;
+  }
+
+  .logo img {
+    max-width: 14rem;
+    height: 2.8rem;
+  }
+
+  /* What We Do section - tablet adjustments */
+  .what-content {
+    padding: 0 2rem;
+  }
+
+  .what-text {
+    padding-inline: 8rem;
+    line-height: 1.8;
+    font-size: 1.4rem;
+  }
+
+  .what-list {
+    gap: 3rem;
+    margin-block-start: 5rem;
+    margin-block-end: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .what-list-card {
+    flex: 0 0 calc(50% - 3rem);
+    margin-bottom: 3rem;
+  }
+
+  .what-icon-title {
+    font-size: 1.3rem;
+    margin-block: 1.5rem;
+  }
+
+  .what-icon-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 0 1rem;
+  }
+
+  /* Our Results section - tablet adjustments */
+  #our-results {
+    min-height: 45rem;
+  }
+
+  .our-results-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .our-results-title {
+    font-size: 2.8rem;
+    margin-block-start: -6rem;
+    margin-block-end: 3rem;
+  }
+
+  .our-results-text {
+    font-size: 1.4rem;
+    max-width: 80%;
+    line-height: 1.6;
+    margin-block-end: 3rem;
+  }
+
+  .our-results-box div p:first-of-type:before {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .percentage {
+    font-size: 3rem !important;
+    margin-top: -13rem;
+  }
+
+  .p-text {
+    font-size: 1.2rem !important;
+    margin-top: 1rem;
+  }
+
+  /* Contact Us section - tablet adjustments */
+  #contact-us {
+    margin-block: 4rem;
+  }
+
+  .contact-us h2 {
+    font-size: 2.5rem;
+    margin-block-end: 2.5rem;
+  }
+
+  input {
+    min-width: 40rem;
+    margin-block-end: 3rem;
+  }
+
+  .form-element {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Footer adjustments for tablet */
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-icons {
+    margin-top: 1rem;
+  }
+
+  /* General text adjustments for tablet */
+  .cta {
+    padding-inline: 20px;
+    padding-block: 8px;
+    margin-block-start: 3rem;
+    margin-block-end: 4rem;
+    font-size: 1.3rem;
+  }
+
+  .cta-text {
+    font-size: 1.4rem !important;
+    line-height: 1.6;
+  }
+
+  /* SVG icon sizing adjustments */
+  .what-list-card i svg {
+    width: 70px;
+    height: auto;
+  }
+
+  /* Form adjustments */
+  form {
+    width: 100%;
+    max-width: 50rem;
+  }
+}
+
+/* Additional mobile adjustments that affect tablet */
+@media screen and (max-width: 1024px) {
+  .what-text {
+    padding-inline: 4rem;
+  }
+
+  .grid-container {
+    gap: 1.5rem;
+  }
+
+  .flex-container {
+    margin: 0 -0.5rem;
+  }
+
+  .flex-col {
+    padding: 0 5px;
+  }
+}
+
+/* Specific adjustments for smaller tablets */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .what-list-card {
+    flex: 0 0 100%;
+  }
+
+  .what-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .our-results-box {
+    grid-template-columns: 1fr;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  input {
+    min-width: 35rem;
+  }
+
+  .header-content {
+    margin-block-start: 20rem;
+  }
+
+  header {
+    min-height: 55rem;
+  }
+}
+
+/* Add this after your tablet CSS */
+
+/* Mobile Styles (767px and below) */
+@media screen and (max-width: 767px) {
+  /* Base container adjustments */
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  /* Header adjustments for mobile */
+  header {
+    min-height: 50rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem;
+  }
+
+  /* Navigation adjustments for mobile */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo img {
+    max-width: 12rem;
+    height: 2.5rem;
+  }
+
+  /* Header content adjustments */
+  .header-content {
+    max-width: 90%;
+    margin-block-start: 15rem;
+  }
+
+  .header-content-title h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .header-content-title h1 + p {
+    font-size: 1.2rem;
+    margin-block-start: 0.8rem;
+    line-height: 1.4;
+  }
+
+  /* CTA button adjustments */
+  .cta {
+    padding-inline: 15px;
+    padding-block: 8px;
+    margin-block-start: 2rem;
+    margin-block-end: 3rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+  }
+
+  .cta-text {
+    font-size: 1.2rem !important;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  /* What We Do section - mobile adjustments */
+  .what-content {
+    padding: 0 1rem;
+  }
+
+  .what-title {
+    font-size: 2rem;
+    margin-block-start: 3rem;
+    margin-block-end: 2rem;
+    text-align: center;
+  }
+
+  .what-text {
+    padding-inline: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .what-list {
+    flex-direction: column;
+    gap: 2rem;
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+  }
+
+  .what-list-card {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .what-icon-title {
+    font-size: 1.2rem;
+    margin-block: 1rem;
+  }
+
+  .what-icon-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* SVG icon sizing for mobile */
+  .what-list-card i svg {
+    width: 60px;
+    height: auto;
+  }
+
+  /* Our Results section - mobile adjustments */
+  #our-results {
+    min-height: auto;
+    padding: 3rem 1rem;
+    background-position: center;
+  }
+
+  .res-con {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .our-results-title {
+    font-size: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 2rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .our-results-text {
+    font-size: 1.2rem;
+    max-width: 100%;
+    line-height: 1.5;
+    margin-block-end: 3rem;
+    text-align: justify;
+  }
+
+  .our-results-box {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .our-results-box div {
+    text-align: center;
+  }
+
+  .our-results-box div p:first-of-type:before {
+    width: 14rem;
+    height: 14rem;
+    margin: 0 auto;
+  }
+
+  .percentage {
+    font-size: 2.5rem !important;
+    margin-top: -11rem;
+    font-weight: bold;
+  }
+
+  .p-text {
+    font-size: 1.1rem !important;
+    margin-top: 0.8rem;
+  }
+
+  /* Contact Us section - mobile adjustments */
+  #contact-us {
+    margin-block: 3rem;
+    padding: 0 1rem;
+  }
+
+  .contact-us h2 {
+    font-size: 2rem;
+    margin-block-end: 2rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    min-width: 100%;
+    margin-block-end: 2.5rem;
+    padding-bottom: 0.8rem;
+  }
+
+  input::placeholder {
+    font-size: 1.1rem;
+  }
+
+  .form-element-btn {
+    margin-top: 1rem;
+  }
+
+  /* Footer adjustments for mobile */
+  footer {
+    padding-block: 3rem;
+  }
+
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .footer-icons {
+    margin-top: 1rem;
+  }
+
+  .footer-icons svg {
+    width: 120px;
+    height: auto;
+  }
+
+  /* Grid system adjustments for mobile */
+  .grid-container {
+    gap: 1rem;
+  }
+
+  [class^="grid-col-"] {
+    grid-column: 1 / -1;
+  }
+
+  /* Flex grid adjustments for mobile */
+  .flex-container {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  [class^="flex-col-"] {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hide hamburger menu if added later */
+  .hamburger-menu {
+    display: none; /* Will be implemented if needed */
+  }
+
+  /* Utility classes for mobile */
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  /* Text alignment adjustments */
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: center;
+  }
+
+  /* Spacing adjustments */
+  .mb-mobile-1 {
+    margin-bottom: 1rem;
+  }
+
+  .mb-mobile-2 {
+    margin-bottom: 2rem;
+  }
+
+  .mt-mobile-1 {
+    margin-top: 1rem;
+  }
+
+  .mt-mobile-2 {
+    margin-top: 2rem;
+  }
+}
+
+/* Small mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+  header {
+    min-height: 45rem;
+  }
+
+  .header-content {
+    margin-block-start: 12rem;
+  }
+
+  .header-content-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-content-title h1 + p {
+    font-size: 1.1rem;
+  }
+
+  .what-title,
+  .our-results-title,
+  .contact-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-text,
+  .what-text,
+  .our-results-text {
+    font-size: 1.1rem !important;
+  }
+
+  .what-icon-title,
+  .what-icon-text,
+  .p-text {
+    font-size: 1.1rem !important;
+  }
+
+  .percentage {
+    font-size: 2.2rem !important;
+    margin-top: -10rem;
+  }
+
+  .our-results-box div p:first-of-type:before {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .logo img {
+    max-width: 10rem;
+    height: 2rem;
+  }
+}
+
+/* Very small mobile devices (360px and below) */
+@media screen and (max-width: 360px) {
+  .header-content-title h1 {
+    font-size: 1.6rem;
+  }
+
+  .cta {
+    padding-inline: 12px;
+    padding-block: 6px;
+    font-size: 1.1rem;
+  }
+
+  .what-list-card i svg {
+    width: 50px;
+  }
+
+  .our-results-box div p:first-of-type:before {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .percentage {
+    font-size: 2rem !important;
+    margin-top: -9rem;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  header {
+    min-height: 35rem;
+  }
+
+  .header-content {
+    margin-block-start: 10rem;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .what-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .what-list-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+/* CSS-only hamburger menu */
+/* CSS-only hamburger menu fix */
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile Styles (767px and below) - CSS-only version */
+@media screen and (max-width: 767px) {
+  /* Position the hamburger/label */
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  /* Hide menu by default */
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: #071629;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    padding-top: 80px;
+    z-index: 999;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    margin: 0;
+  }
+
+  /* Show menu when checkbox is checked */
+  .menu-toggle:checked ~ .nav-menu {
+    left: 0;
+  }
+
+  /* Hamburger animation when checked */
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* Adjust logo position */
+  .logo {
+    position: relative;
+    z-index: 1001;
+  }
+}
